@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    image: python-api:dev
+    environment:
+      APP_NAME: "python-api"
+      APP_VERSION: "0.1.0"
+      APP_ENV: "development"
+      LOG_LEVEL: "INFO"
+    ports:
+      - "8000:8000"
