@@ -34,7 +34,7 @@ jobs:
       - name: Mypy
         run: mypy app
       - name: Pytest
-        run: pytest -q
+        run: PYTHONPATH=./ pytest -q
 
   docker:
     name: Build & Smoke Test (Docker)
