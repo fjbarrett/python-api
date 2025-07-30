@@ -4,10 +4,7 @@ target-version = ["py312"]
 
 [tool.ruff]
 line-length = 100
-select = ["E","F","I","UP"]
 target-version = "py312"
 
-[tool.mypy]
-python_version = "3.12"
-strict = true
-warn_unused_ignores = true
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
